@@ -6,10 +6,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Manami</title>
+        <title>Manami 愛美</title>
         <meta name="description" content="Manami on Solana" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/manami.gif" />
       </Head>
       <main className={styles.main}>
         <div className={styles.infos}>
@@ -17,7 +17,7 @@ export default function Home() {
           <p className={styles.title}>$manami</p>
 
           <div>
-            <p>A critical error has been detected in the blockchain. $manami has been deployed as an emergency measure.</p>
+            <p>A critical error has been detected in the blockchain. manami 愛美 has been deployed as an emergency measure.</p>
           </div>
 
           <div className={styles.alts}>
