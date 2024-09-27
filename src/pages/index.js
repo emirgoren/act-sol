@@ -7,8 +7,13 @@ export default function Home() {
     <>
       <Head>
         <title>Manami 愛美</title>
-        <meta name="description" content="Manami on Solana" />
+        <meta name="description" content="Manami on Solana. A critical error has been detected in the blockchain. manami 愛美 has been deployed as an emergency measure." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:image" content={`/manami.gif`} />
+        <meta property="og:image:type" content="image/jpeg"/>
+        <meta property="og:image:width" content="420"/>
+        <meta property="og:image:height" content="420"/>
+        <meta property="og:type" content="website"/>
         <link rel="icon" href="/manami.gif" />
       </Head>
       <main className={styles.main}>
