@@ -28,6 +28,7 @@ export default function Home() {
           <div className={styles.alts}>
             <a href="#tg">Telegram</a>
             <a href="#CA">CA</a>
+            <a href="https://x.com/manamisol" target='_blank'>X</a>
           </div>
 
           <div className={styles.dexPaid}>
@@ -41,7 +42,7 @@ export default function Home() {
             <p style={{marginTop:'20px'}}>Dex will be paid at when $manami reaches $25.000 Marketcap</p>
           </div>
 
-          <div className={styles.contractAddress}>
+          <div id='CA' className={styles.contractAddress}>
             <p>CONTRACT ADDRESS:</p>
             <p>ca: ?</p>
           </div>
