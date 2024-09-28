@@ -26,10 +26,10 @@ export default function Home() {
           </div>
 
           <div className={styles.alts}>
-            <a href="#tg">Telegram</a>
-            <a href="#CA">CA</a>
+            <a href="https://t.me/manamisol" target='_blank'>Telegram</a>
             <a href="https://x.com/manamisol" target='_blank'>X</a>
-          </div>
+            <a href="#CA">CA</a>
+            </div>
 
           <div className={styles.dexPaid}>
             <p style={{fontSize:'20px', marginBottom:'10px', color:'#063dac'}}>DEXPAID?</p>
