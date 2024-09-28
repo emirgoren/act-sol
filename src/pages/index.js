@@ -44,7 +44,7 @@ export default function Home() {
 
           <div id='CA' className={styles.contractAddress}>
             <p>CONTRACT ADDRESS:</p>
-            <p>ca: ? - Not launched yet.</p>
+            <p>ca: 75RNAJ3RrqRKot8ZpNkANKjUbzK7Twjv2mZ7qMX4pump</p>
           </div>
 
           <div className={styles.pump}>
