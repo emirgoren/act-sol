@@ -26,8 +26,8 @@ export default function Home() {
           </div>
 
           <div className={styles.alts}>
-            <a href="https://t.me/manamisol" target='_blank'>Telegram</a>
-            <a href="https://x.com/manamisol" target='_blank'>X</a>
+            <a href="#" target='_blank'>Telegram</a>
+            <a href="#" target='_blank'>X</a>
             <a href="#CA">CA</a>
             </div>
 
@@ -44,7 +44,7 @@ export default function Home() {
 
           <div id='CA' className={styles.contractAddress}>
             <p>CONTRACT ADDRESS:</p>
-            <p>ca: 75RNAJ3RrqRKot8ZpNkANKjUbzK7Twjv2mZ7qMX4pump</p>
+            <p>ca: ? - Not launched yet.</p>
           </div>
 
           <div className={styles.pump}>
