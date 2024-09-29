@@ -26,8 +26,8 @@ export default function Home() {
           </div>
 
           <div className={styles.alts}>
-            <a href="#" target='_blank'>Telegram</a>
-            <a href="#" target='_blank'>X</a>
+            <a href="https://t.me/manamisol" target='_blank'>Telegram</a>
+            <a href="https://x.com/manamisol" target='_blank'>X</a>
             <a href="#CA">CA</a>
             </div>
 
