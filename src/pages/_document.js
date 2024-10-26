@@ -5,6 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <body>
+        <p style={{display:'none'}}>web made by: tg @egisol, github emirgoren</p>
         <Main />
         <NextScript />
       </body>
