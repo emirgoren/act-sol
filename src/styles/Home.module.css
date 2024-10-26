@@ -2,7 +2,7 @@
   display:grid;
   justify-content: center;
   width: 100%;
-  height: 1050px;
+  height: 1700px;
 }
 
 .infos {
@@ -11,25 +11,32 @@
   margin-top: 2vw;
   transition: 0.5s all;
   border-radius: 10px;
-  box-shadow: 0 0 20px 5px white;
   padding: 50px;
   margin: 50px 0px 50px 0px;
   width: 100%;
   color: white;
-  cursor: grab;
-  background-color: black;
 }
 
-.infos:hover {
-  scale: 1.05;
+.pfps {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
 }
+
+.pfps img {
+  margin-right: 20px;
+}
+
+/* .infos:hover {
+  scale: 1.05;
+} */
 
 /* inside of infos */
 
-.manami {
-  height: 180px;
+.act {
+  height: 340px;
   margin: auto;
-  box-shadow: 0 0 15px 2px grey;
+  box-shadow: 0 0 15px 2px #7408a1;
   border-radius: 10px;
 }
 
@@ -37,10 +44,23 @@
   text-align: center;
   font-size: 28px;
   margin-top: 25px;
+  font-family: "CourierPrime", monospace; 
+  font-weight: 700;
+}
+
+.infoTop {
+  font-weight: 700;
+  font-size:20px;
+  margin-top:30px;
+}
+
+.infoTop pre{
+  font-size: 2.5px;
+  text-align: center;
+  color: #ffffff;
 }
 
 .alts {
-  margin-top:20px;
   display: flex;
   justify-content: center;
 }
@@ -50,9 +70,10 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  border: 1px solid #063dac;
   padding: 0px 10px 0px 10px;
   margin-left: 5px;
+  font-size: 1.7px;
+  color:rgb(177, 19, 188);
 }
 
 /* dexpaid */
@@ -61,7 +82,8 @@
   margin-top: 50px;
   display: grid;
   justify-self: center;
-  box-shadow: 0 0 15px 2px rgb(114, 1, 1);
+  box-shadow: 0 0 15px 2px #7408a1;
+  background-color: black;
   border-radius: 10px;
   padding: 20px;
   width: 40vw;
@@ -73,7 +95,8 @@
   margin-top: 50px;
   display: grid;
   justify-self: center;
-  box-shadow: 0 0 15px 2px rgb(97, 1, 114);
+  box-shadow: 0 0 15px 2px rgb(114, 1, 1);
+  background-color: black;
   border-radius: 10px;
   padding: 20px;
   width: 40vw;
@@ -86,6 +109,7 @@
   display: grid;
   justify-self: center;
   justify-content: center;
+  background-color: black;
   box-shadow: 0 0 15px 2px rgb(35, 35, 35);
   border-radius: 10px;
   padding: 10px;
@@ -98,3 +122,19 @@
   text-align: center;
   margin: 10px;
 }
+
+/* ascii */
+
+.ascii {
+  font-family: monospace;
+  white-space: pre;
+  color: #00ff15;
+  font-size: 16px; /* Adjust as needed */
+  line-height: 1.1; /* Fine-tune to adjust vertical spacing */
+  text-align: center;
+  overflow: hidden; /* Prevents unexpected scroll */
+  margin: 20px 0;
+  font-size: 5px;
+  /* background-color: black; */
+}
+
