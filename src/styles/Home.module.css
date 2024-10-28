@@ -62,20 +62,20 @@
 .infoTop {
   font-weight: 700;
   font-size:20px;
-  margin-top:30px;
+  margin-top:70px;
 }
 
 .infoTop pre{
   font-size: 2.5px;
   text-align: center;
-  color: #ffffff;
+  color: #54fd00;
 }
 
 .alts {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .alts a {
@@ -85,8 +85,8 @@
   text-align: center;
   padding: 0px 10px 0px 10px;
   margin-left: 5px;
-  font-size: 1.7px;
-  color:rgb(177, 19, 188);
+  font-size: 1px;
+  color:#c2aaff;
 }
 
 /* dexpaid */
@@ -141,12 +141,13 @@
 .ascii {
   font-family: monospace;
   white-space: pre;
-  color: #00ff15;
+  color: #54fd00;
   font-size: 16px; /* Adjust as needed */
   line-height: 1.1; /* Fine-tune to adjust vertical spacing */
   text-align: center;
   overflow: hidden; /* Prevents unexpected scroll */
-  margin-top: 30px;
+  margin-top: 60px;
+  margin-bottom: -40px;
   font-size: 5px;
   /* background-color: black; */
 }
@@ -156,6 +157,7 @@
 .thumbGif {
   width: 50%;
   border-radius: 20px;
+  margin-top: -50px;
 }
 
 /* photo shoot */
@@ -174,8 +176,10 @@
   font-optical-sizing: auto;
   font-weight: lighter;
   font-style: normal;
-  font-size:50px;
+  font-size:5px;
   margin-bottom: 20px;
+  margin-top: 50px;
+  color: #54fd00;
 }
 
 .photoShootParent {
@@ -222,6 +226,10 @@
   .photoShootChild {
     width: 20%;
     border-radius: 20px;
+  }
+
+  .photoShootTitle {
+    margin-top: 100px;
   }
 }
 

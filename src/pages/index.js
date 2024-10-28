@@ -31,7 +31,7 @@ export default function Home() {
         ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
         ctx.fillRect(0, 0, c.width, c.height);
 
-        ctx.fillStyle = "#be42f4"; 
+        ctx.fillStyle = "#88006c"; 
         ctx.font = font_size + "px arial";
 
         for (var i = 0; i < drops.length; i++)
@@ -401,8 +401,33 @@ AAAAAAA                   AAAAAAA cccccccccccccccc          ttttttttttt       II
             </a>
           </div>
 
-          
-
+          <div class="container">
+            <div class="mac-terminal">
+              <div class="header">
+                <div class="header__op">
+                  <span class="header__op-icon header__op-icon--red"></span>
+                  <span class="header__op-icon header__op-icon--yellow"></span>
+                  <span class="header__op-icon header__op-icon--green"></span>
+                </div>
+                <div class="header__title">CA</div>
+                <div class="header__empty"></div>
+              </div>
+              <div class="body">
+                <div class="body__row">
+                  <span class="body__row-arrow"></span>
+                  <span class="body__row-folder">contract-address</span>
+                  <span class="body__row-git--label">:</span>
+                  <span class="body__row-git--branch">CA</span>
+                  <span class="body__row-result">GJAFwWjJ3vnTsrQVabjBVK2TYB1YtRCQXRDfDgUnpump</span>
+                  <span class="body__row-cursor"></span>
+                </div>         
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.alts}>
+          <img className={styles.thumbGif} src="./thumb-gif.gif"/>
+        </div>
           <div class="container">
             <div class="mac-terminal">
               <div class="header">
@@ -469,38 +494,66 @@ AAAAAAA                   AAAAAAA cccccccccccccccc          ttttttttttt       II
             </div>
           </div>
 
-          <div class="container">
-            <div class="mac-terminal">
-              <div class="header">
-                <div class="header__op">
-                  <span class="header__op-icon header__op-icon--red"></span>
-                  <span class="header__op-icon header__op-icon--yellow"></span>
-                  <span class="header__op-icon header__op-icon--green"></span>
-                </div>
-                <div class="header__title">CA</div>
-                <div class="header__empty"></div>
-              </div>
-              <div class="body">
-                <div class="body__row">
-                  <span class="body__row-arrow"></span>
-                  <span class="body__row-folder">contract-address</span>
-                  <span class="body__row-git--label">:</span>
-                  <span class="body__row-git--branch">CA</span>
-                  <span class="body__row-result">GJAFwWjJ3vnTsrQVabjBVK2TYB1YtRCQXRDfDgUnpump</span>
-                  <span class="body__row-cursor"></span>
-                </div>         
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div className={styles.alts}>
-          <img className={styles.thumbGif} src="./thumb-gif.gif"/>
-        </div>
+
+
 
         <div className={styles.alts}>
           <div className={styles.photoShoot}>
-            <p className={styles.photoShootTitle}>ACT AI PHOTO SHOOT</p>
+          <pre className={styles.photoShootTitle}>
+            {`               AAA                  CCCCCCCCCCCCCTTTTTTTTTTTTTTTTTTTTTTT                    AAA               IIIIIIIIII
+              A:::A              CCC::::::::::::CT:::::::::::::::::::::T                   A:::A              I::::::::I
+             A:::::A           CC:::::::::::::::CT:::::::::::::::::::::T                  A:::::A             I::::::::I
+            A:::::::A         C:::::CCCCCCCC::::CT:::::TT:::::::TT:::::T                 A:::::::A            II::::::II
+           A:::::::::A       C:::::C       CCCCCCTTTTTT  T:::::T  TTTTTT                A:::::::::A             I::::I  
+          A:::::A:::::A     C:::::C                      T:::::T                       A:::::A:::::A            I::::I  
+         A:::::A A:::::A    C:::::C                      T:::::T                      A:::::A A:::::A           I::::I  
+        A:::::A   A:::::A   C:::::C                      T:::::T                     A:::::A   A:::::A          I::::I  
+       A:::::A     A:::::A  C:::::C                      T:::::T                    A:::::A     A:::::A         I::::I  
+      A:::::AAAAAAAAA:::::A C:::::C                      T:::::T                   A:::::AAAAAAAAA:::::A        I::::I  
+     A:::::::::::::::::::::AC:::::C                      T:::::T                  A:::::::::::::::::::::A       I::::I  
+    A:::::AAAAAAAAAAAAA:::::AC:::::C       CCCCCC        T:::::T                 A:::::AAAAAAAAAAAAA:::::A      I::::I  
+   A:::::A             A:::::AC:::::CCCCCCCC::::C      TT:::::::TT              A:::::A             A:::::A   II::::::II
+  A:::::A               A:::::ACC:::::::::::::::C      T:::::::::T             A:::::A               A:::::A  I::::::::I
+ A:::::A                 A:::::A CCC::::::::::::C      T:::::::::T            A:::::A                 A:::::A I::::::::I
+AAAAAAA                   AAAAAAA   CCCCCCCCCCCCC      TTTTTTTTTTT           AAAAAAA                   AAAAAAAIIIIIIIIII
+PPPPPPPPPPPPPPPPP   HHHHHHHHH     HHHHHHHHH     OOOOOOOOO     TTTTTTTTTTTTTTTTTTTTTTT     OOOOOOOOO                     
+P::::::::::::::::P  H:::::::H     H:::::::H   OO:::::::::OO   T:::::::::::::::::::::T   OO:::::::::OO                   
+P::::::PPPPPP:::::P H:::::::H     H:::::::H OO:::::::::::::OO T:::::::::::::::::::::T OO:::::::::::::OO                 
+PP:::::P     P:::::PHH::::::H     H::::::HHO:::::::OOO:::::::OT:::::TT:::::::TT:::::TO:::::::OOO:::::::O                
+  P::::P     P:::::P  H:::::H     H:::::H  O::::::O   O::::::OTTTTTT  T:::::T  TTTTTTO::::::O   O::::::O                
+  P::::P     P:::::P  H:::::H     H:::::H  O:::::O     O:::::O        T:::::T        O:::::O     O:::::O                
+  P::::PPPPPP:::::P   H::::::HHHHH::::::H  O:::::O     O:::::O        T:::::T        O:::::O     O:::::O                
+  P:::::::::::::PP    H:::::::::::::::::H  O:::::O     O:::::O        T:::::T        O:::::O     O:::::O                
+  P::::PPPPPPPPP      H:::::::::::::::::H  O:::::O     O:::::O        T:::::T        O:::::O     O:::::O                
+  P::::P              H::::::HHHHH::::::H  O:::::O     O:::::O        T:::::T        O:::::O     O:::::O                
+  P::::P              H:::::H     H:::::H  O:::::O     O:::::O        T:::::T        O:::::O     O:::::O                
+  P::::P              H:::::H     H:::::H  O::::::O   O::::::O        T:::::T        O::::::O   O::::::O                
+PP::::::PP          HH::::::H     H::::::HHO:::::::OOO:::::::O      TT:::::::TT      O:::::::OOO:::::::O                
+P::::::::P          H:::::::H     H:::::::H OO:::::::::::::OO       T:::::::::T       OO:::::::::::::OO                 
+P::::::::P          H:::::::H     H:::::::H   OO:::::::::OO         T:::::::::T         OO:::::::::OO                   
+PPPPPPPPPP          HHHHHHHHH     HHHHHHHHH     OOOOOOOOO           TTTTTTTTTTT           OOOOOOOOO                     
+   SSSSSSSSSSSSSSS HHHHHHHHH     HHHHHHHHH     OOOOOOOOO          OOOOOOOOO     TTTTTTTTTTTTTTTTTTTTTTT                 
+ SS:::::::::::::::SH:::::::H     H:::::::H   OO:::::::::OO      OO:::::::::OO   T:::::::::::::::::::::T                 
+S:::::SSSSSS::::::SH:::::::H     H:::::::H OO:::::::::::::OO  OO:::::::::::::OO T:::::::::::::::::::::T                 
+S:::::S     SSSSSSSHH::::::H     H::::::HHO:::::::OOO:::::::OO:::::::OOO:::::::OT:::::TT:::::::TT:::::T                 
+S:::::S              H:::::H     H:::::H  O::::::O   O::::::OO::::::O   O::::::OTTTTTT  T:::::T  TTTTTT                 
+S:::::S              H:::::H     H:::::H  O:::::O     O:::::OO:::::O     O:::::O        T:::::T                         
+ S::::SSSS           H::::::HHHHH::::::H  O:::::O     O:::::OO:::::O     O:::::O        T:::::T                         
+  SS::::::SSSSS      H:::::::::::::::::H  O:::::O     O:::::OO:::::O     O:::::O        T:::::T                         
+    SSS::::::::SS    H:::::::::::::::::H  O:::::O     O:::::OO:::::O     O:::::O        T:::::T                         
+       SSSSSS::::S   H::::::HHHHH::::::H  O:::::O     O:::::OO:::::O     O:::::O        T:::::T                         
+            S:::::S  H:::::H     H:::::H  O:::::O     O:::::OO:::::O     O:::::O        T:::::T                         
+            S:::::S  H:::::H     H:::::H  O::::::O   O::::::OO::::::O   O::::::O        T:::::T                         
+SSSSSSS     S:::::SHH::::::H     H::::::HHO:::::::OOO:::::::OO:::::::OOO:::::::O      TT:::::::TT                       
+S::::::SSSSSS:::::SH:::::::H     H:::::::H OO:::::::::::::OO  OO:::::::::::::OO       T:::::::::T                       
+S:::::::::::::::SS H:::::::H     H:::::::H   OO:::::::::OO      OO:::::::::OO         T:::::::::T                       
+ SSSSSSSSSSSSSSS   HHHHHHHHH     HHHHHHHHH     OOOOOOOOO          OOOOOOOOO           TTTTTTTTTTT                       
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        `}
+          </pre>
 
             <div className={styles.photoShootParent}>
               <img className={styles.photoShootChild} src="./shoot1.jpg"/>
