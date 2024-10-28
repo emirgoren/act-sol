@@ -36,11 +36,19 @@
 
 /* inside of infos */
 
-.act {
+/* .act {
+  width: 200px;
+  text-overflow: initial;
   height: 340px;
   margin: auto;
   box-shadow: 0 0 15px 2px #7408a1;
   border-radius: 10px;
+} */
+
+.act {
+  object-fit: fill;
+  width: 500px;
+  height: 500px;
 }
 
 .title {
@@ -138,7 +146,7 @@
   line-height: 1.1; /* Fine-tune to adjust vertical spacing */
   text-align: center;
   overflow: hidden; /* Prevents unexpected scroll */
-  margin: 20px 0;
+  margin-top: 30px;
   font-size: 5px;
   /* background-color: black; */
 }
@@ -147,6 +155,7 @@
 
 .thumbGif {
   width: 50%;
+  border-radius: 20px;
 }
 
 /* photo shoot */

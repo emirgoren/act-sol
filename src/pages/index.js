@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import { useLayoutEffect } from 'react'
+import Script from 'next/script'
+// import { Pane } from "https://cdn.skypack.dev/tweakpane";
 
 export default function Home() {
 
@@ -45,11 +47,14 @@ export default function Home() {
       }
 
       setInterval(draw, 35);
+      // pfp();
+      // setInterval(pfp, 250);
   }, [])
 
   return (
     <>
       <Head>
+        
         <title>Act I : The AI Prophecy</title>
         <meta name="description" content="ACT on Solana. A critical error has been detected in the blockchain. ACT has been deployed as an emergency measure." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -60,46 +65,83 @@ export default function Home() {
         <meta property="og:type" content="website"/>
         <link rel="icon" href="/pfp-static.jpg" />
       </Head>
+      <Script type="module" src="./scripts/pfp.js"/>
       <canvas id="c" width="2300" height="750"></canvas>  
-<pre id="mainAscii" className={styles.ascii}>
-  {`
-REM __| |_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________| |__
-REM __   _______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________   __
-REM   | |                                                                                                                                                                                                                                                                                                                                                                                       | |  
-REM   | |                 AAA                                       tttt               IIIIIIIIII                  TTTTTTTTTTTTTTTTTTTTTThhhhhhh                                                    AAA              IIIIIIIIII     PPPPPPPPPPPPPPPPP                                                       hhhhhhh                                                                             | |  
-REM   | |                A:::A                                   ttt:::t               I::::::::I                  T:::::::::::::::::::::h:::::h                                                   A:::A             I::::::::I     P::::::::::::::::P                                                      h:::::h                                                                             | |  
-REM   | |               A:::::A                                  t:::::t               I::::::::I                  T:::::::::::::::::::::h:::::h                                                  A:::::A            I::::::::I     P::::::PPPPPP:::::P                                                     h:::::h                                                                             | |  
-REM   | |              A:::::::A                                 t:::::t               II::::::II                  T:::::TT:::::::TT:::::h:::::h                                                 A:::::::A           II::::::II     PP:::::P     P:::::P                                                    h:::::h                                                                             | |  
-REM   | |             A:::::::::A           cccccccccccccccttttttt:::::ttttttt           I::::I                    TTTTTT  T:::::T  TTTTTTh::::h hhhhh          eeeeeeeeeeee                    A:::::::::A            I::::I         P::::P     P:::::rrrrr   rrrrrrrrr     ooooooooooo  ppppp   ppppppppp  h::::h hhhhh          eeeeeeeeeeee       cccccccccccccccyyyyyyy           yyyyyyy  | |  
-REM   | |            A:::::A:::::A        cc:::::::::::::::t:::::::::::::::::t           I::::I        ::::::              T:::::T        h::::hh:::::hhh     ee::::::::::::ee                 A:::::A:::::A           I::::I         P::::P     P:::::r::::rrr:::::::::r  oo:::::::::::oop::::ppp:::::::::p h::::hh:::::hhh     ee::::::::::::ee   cc:::::::::::::::cy:::::y         y:::::y   | |  
-REM   | |           A:::::A A:::::A      c:::::::::::::::::t:::::::::::::::::t           I::::I        ::::::              T:::::T        h::::::::::::::hh  e::::::eeeee:::::ee              A:::::A A:::::A          I::::I         P::::PPPPPP:::::Pr:::::::::::::::::ro:::::::::::::::p:::::::::::::::::ph::::::::::::::hh  e::::::eeeee:::::eec:::::::::::::::::c y:::::y       y:::::y    | |  
-REM   | |          A:::::A   A:::::A    c:::::::cccccc:::::tttttt:::::::tttttt           I::::I        ::::::              T:::::T        h:::::::hhh::::::he::::::e     e:::::e             A:::::A   A:::::A         I::::I         P:::::::::::::PP rr::::::rrrrr::::::o:::::ooooo:::::pp::::::ppppp::::::h:::::::hhh::::::he::::::e     e:::::c:::::::cccccc:::::c  y:::::y     y:::::y     | |  
-REM   | |         A:::::A     A:::::A   c::::::c     ccccccc     t:::::t                 I::::I                            T:::::T        h::::::h   h::::::e:::::::eeeee::::::e            A:::::A     A:::::A        I::::I         P::::PPPPPPPPP    r:::::r     r:::::o::::o     o::::op:::::p     p:::::h::::::h   h::::::e:::::::eeeee::::::c::::::c     ccccccc   y:::::y   y:::::y      | |  
-REM   | |        A:::::AAAAAAAAA:::::A  c:::::c                  t:::::t                 I::::I                            T:::::T        h:::::h     h:::::e:::::::::::::::::e            A:::::AAAAAAAAA:::::A       I::::I         P::::P            r:::::r     rrrrrro::::o     o::::op:::::p     p:::::h:::::h     h:::::e:::::::::::::::::ec:::::c                 y:::::y y:::::y       | |  
-REM   | |       A:::::::::::::::::::::A c:::::c                  t:::::t                 I::::I                            T:::::T        h:::::h     h:::::e::::::eeeeeeeeeee            A:::::::::::::::::::::A      I::::I         P::::P            r:::::r           o::::o     o::::op:::::p     p:::::h:::::h     h:::::e::::::eeeeeeeeeee c:::::c                  y:::::y:::::y        | |  
-REM   | |      A:::::AAAAAAAAAAAAA:::::Ac::::::c     ccccccc     t:::::t    tttttt       I::::I        ::::::              T:::::T        h:::::h     h:::::e:::::::e                    A:::::AAAAAAAAAAAAA:::::A     I::::I         P::::P            r:::::r           o::::o     o::::op:::::p    p::::::h:::::h     h:::::e:::::::e          c::::::c     ccccccc      y:::::::::y         | |  
-REM   | |     A:::::A             A:::::c:::::::cccccc:::::c     t::::::tttt:::::t     II::::::II      ::::::            TT:::::::TT      h:::::h     h:::::e::::::::e                  A:::::A             A:::::A  II::::::II     PP::::::PP          r:::::r           o:::::ooooo:::::op:::::ppppp:::::::h:::::h     h:::::e::::::::e         c:::::::cccccc:::::c       y:::::::y          | |  
-REM   | |    A:::::A               A:::::c:::::::::::::::::c     tt::::::::::::::t     I::::::::I      ::::::            T:::::::::T      h:::::h     h:::::he::::::::eeeeeeee         A:::::A               A:::::A I::::::::I     P::::::::P          r:::::r           o:::::::::::::::op::::::::::::::::ph:::::h     h:::::he::::::::eeeeeeee  c:::::::::::::::::c        y:::::y           | |  
-REM   | |   A:::::A                 A:::::cc:::::::::::::::c       tt:::::::::::tt     I::::::::I                        T:::::::::T      h:::::h     h:::::h ee:::::::::::::e        A:::::A                 A:::::AI::::::::I     P::::::::P          r:::::r            oo:::::::::::oo p::::::::::::::pp h:::::h     h:::::h ee:::::::::::::e   cc:::::::::::::::c       y:::::y            | |  
-REM   | |  AAAAAAA                   AAAAAAAcccccccccccccccc         ttttttttttt       IIIIIIIIII                        TTTTTTTTTTT      hhhhhhh     hhhhhhh   eeeeeeeeeeeeee       AAAAAAA                   AAAAAAIIIIIIIIII     PPPPPPPPPP          rrrrrrr              ooooooooooo   p::::::pppppppp   hhhhhhh     hhhhhhh   eeeeeeeeeeeeee     cccccccccccccccc      y:::::y             | |  
-REM   | |                                                                                                                                                                                                                                                                                  p:::::p                                                                         y:::::y              | |  
-REM   | |                                                                                                                                                                                                                                                                                  p:::::p                                                                        y:::::y               | |  
-REM   | |                                                                                                                                                                                                                                                                                 p:::::::p                                                                      y:::::y                | |  
-REM   | |                                                                                                                                                                                                                                                                                 p:::::::p                                                                     y:::::y                 | |  
-REM   | |                                                                                                                                                                                                                                                                                 p:::::::p                                                                    yyyyyyy                  | |  
-REM   | |                                                                                                                                                                                                                                                                                 ppppppppp                                                                                             | |  
-REM __| |_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________| |__
-REM __   _______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________   __
-REM   | |                                                                                                                                                                                                                                                                                                                                                                                       | |  `}
-</pre>
-
+      
+      <pre id="mainAscii" className={styles.ascii}>
+        {`               AAA                                         tttt               IIIIIIIIII                                                                         
+                    A:::A                                     ttt:::t               I::::::::I                                                                         
+                  A:::::A                                    t:::::t               I::::::::I                                                                         
+                  A:::::::A                                   t:::::t               II::::::II                                                                         
+                A:::::::::A            ccccccccccccccccttttttt:::::ttttttt           I::::I                                                                           
+                A:::::A:::::A         cc:::::::::::::::ct:::::::::::::::::t           I::::I        ::::::                                                             
+              A:::::A A:::::A       c:::::::::::::::::ct:::::::::::::::::t           I::::I        ::::::                                                             
+              A:::::A   A:::::A     c:::::::cccccc:::::ctttttt:::::::tttttt           I::::I        ::::::                                                             
+            A:::::A     A:::::A    c::::::c     ccccccc      t:::::t                 I::::I                                                                           
+            A:::::AAAAAAAAA:::::A   c:::::c                   t:::::t                 I::::I                                                                           
+          A:::::::::::::::::::::A  c:::::c                   t:::::t                 I::::I                                                                           
+          A:::::AAAAAAAAAAAAA:::::A c::::::c     ccccccc      t:::::t    tttttt       I::::I        ::::::                                                             
+        A:::::A             A:::::Ac:::::::cccccc:::::c      t::::::tttt:::::t     II::::::II      ::::::                                                             
+        A:::::A               A:::::Ac:::::::::::::::::c      tt::::::::::::::t     I::::::::I      ::::::                                                             
+      A:::::A                 A:::::Acc:::::::::::::::c        tt:::::::::::tt     I::::::::I                                                                         
+      AAAAAAA                   AAAAAAA cccccccccccccccc          ttttttttttt       IIIIIIIIII                                                                         
+          TTTTTTTTTTTTTTTTTTTTTTThhhhhhh                                                     AAA               IIIIIIIIII                                             
+          T:::::::::::::::::::::Th:::::h                                                    A:::A              I::::::::I                                             
+          T:::::::::::::::::::::Th:::::h                                                   A:::::A             I::::::::I                                             
+          T:::::TT:::::::TT:::::Th:::::h                                                  A:::::::A            II::::::II                                             
+          TTTTTT  T:::::T  TTTTTT h::::h hhhhh           eeeeeeeeeeee                    A:::::::::A             I::::I                                               
+                  T:::::T         h::::hh:::::hhh      ee::::::::::::ee                 A:::::A:::::A            I::::I                                               
+                  T:::::T         h::::::::::::::hh   e::::::eeeee:::::ee              A:::::A A:::::A           I::::I                                               
+                  T:::::T         h:::::::hhh::::::h e::::::e     e:::::e             A:::::A   A:::::A          I::::I                                               
+                  T:::::T         h::::::h   h::::::he:::::::eeeee::::::e            A:::::A     A:::::A         I::::I                                               
+                  T:::::T         h:::::h     h:::::he:::::::::::::::::e            A:::::AAAAAAAAA:::::A        I::::I                                               
+                  T:::::T         h:::::h     h:::::he::::::eeeeeeeeeee            A:::::::::::::::::::::A       I::::I                                               
+                  T:::::T         h:::::h     h:::::he:::::::e                    A:::::AAAAAAAAAAAAA:::::A      I::::I                                               
+                TT:::::::TT       h:::::h     h:::::he::::::::e                  A:::::A             A:::::A   II::::::II                                             
+                T:::::::::T       h:::::h     h:::::h e::::::::eeeeeeee         A:::::A               A:::::A  I::::::::I                                             
+                T:::::::::T       h:::::h     h:::::h  ee:::::::::::::e        A:::::A                 A:::::A I::::::::I                                             
+                TTTTTTTTTTT       hhhhhhh     hhhhhhh    eeeeeeeeeeeeee       AAAAAAA                   AAAAAAAIIIIIIIIII                                             
+      PPPPPPPPPPPPPPPPP                                                           hhhhhhh                                                                              
+      P::::::::::::::::P                                                          h:::::h                                                                              
+      P::::::PPPPPP:::::P                                                         h:::::h                                                                              
+      PP:::::P     P:::::P                                                        h:::::h                                                                              
+        P::::P     P:::::Prrrrr   rrrrrrrrr      ooooooooooo   ppppp   ppppppppp   h::::h hhhhh           eeeeeeeeeeee        ccccccccccccccccyyyyyyy           yyyyyyy
+        P::::P     P:::::Pr::::rrr:::::::::r   oo:::::::::::oo p::::ppp:::::::::p  h::::hh:::::hhh      ee::::::::::::ee    cc:::::::::::::::c y:::::y         y:::::y 
+        P::::PPPPPP:::::P r:::::::::::::::::r o:::::::::::::::op:::::::::::::::::p h::::::::::::::hh   e::::::eeeee:::::ee c:::::::::::::::::c  y:::::y       y:::::y  
+        P:::::::::::::PP  rr::::::rrrrr::::::ro:::::ooooo:::::opp::::::ppppp::::::ph:::::::hhh::::::h e::::::e     e:::::ec:::::::cccccc:::::c   y:::::y     y:::::y   
+        P::::PPPPPPPPP     r:::::r     r:::::ro::::o     o::::o p:::::p     p:::::ph::::::h   h::::::he:::::::eeeee::::::ec::::::c     ccccccc    y:::::y   y:::::y    
+        P::::P             r:::::r     rrrrrrro::::o     o::::o p:::::p     p:::::ph:::::h     h:::::he:::::::::::::::::e c:::::c                  y:::::y y:::::y     
+        P::::P             r:::::r            o::::o     o::::o p:::::p     p:::::ph:::::h     h:::::he::::::eeeeeeeeeee  c:::::c                   y:::::y:::::y      
+        P::::P             r:::::r            o::::o     o::::o p:::::p    p::::::ph:::::h     h:::::he:::::::e           c::::::c     ccccccc       y:::::::::y       
+      PP::::::PP           r:::::r            o:::::ooooo:::::o p:::::ppppp:::::::ph:::::h     h:::::he::::::::e          c:::::::cccccc:::::c        y:::::::y        
+      P::::::::P           r:::::r            o:::::::::::::::o p::::::::::::::::p h:::::h     h:::::h e::::::::eeeeeeee   c:::::::::::::::::c         y:::::y         
+      P::::::::P           r:::::r             oo:::::::::::oo  p::::::::::::::pp  h:::::h     h:::::h  ee:::::::::::::e    cc:::::::::::::::c        y:::::y          
+      PPPPPPPPPP           rrrrrrr               ooooooooooo    p::::::pppppppp    hhhhhhh     hhhhhhh    eeeeeeeeeeeeee      cccccccccccccccc       y:::::y           
+                                                                p:::::p                                                                             y:::::y            
+                                                                p:::::p                                                                            y:::::y             
+                                                              p:::::::p                                                                          y:::::y              
+                                                              p:::::::p                                                                         y:::::y               
+                                                              p:::::::p                                                                        yyyyyyy                
+                                                              ppppppppp                                                                                               `}
+      </pre>
       <main className={styles.main}>
         
         <div className={styles.infos}>
-        <div className={styles.pfps}>
-          <img className={styles.act} src="./pfp.gif"/>
-          {/* <img className={styles.act} src="./pfp-blue.gif"/> */}
-        </div>
+          <div className={styles.pfps}>
+            {/* <div id="act" className={styles.act}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sunt hic temporibus officiis quia ullam laborum quod, a nemo, reiciendis inventore eligendi et fugiat praesentium pariatur necessitatibus impedit dolores quidem.
+
+              Doloribus facere itaque at necessitatibus fugiat aut, beatae aspernatur magnam perferendis veritatis dicta qui reiciendis delectus, earum eligendi excepturi minus quae blanditiis molestiae adipisci quod. Architecto voluptate ipsa earum. Sit!
+
+              Vel pariatur, eaque, similique minima magni impedit voluptatem eos 
+            </div> */}
+            <div className={styles.act} id="output"></div>
+            <video className={styles.act} id="input" autoplay muted loop playsinline crossorigin="anonymous">
+              <source src="./pfp-vid.mp4" type="video/mp4"/>
+            </video>
+
+            <canvas className={styles.act} id="prerender" width="55" height="30"></canvas>
+            {/* <img className={styles.act} src="./pfp.gif"/> */}
+          </div>
 
           {/* <p className={styles.title}>ACT</p> */}
 
