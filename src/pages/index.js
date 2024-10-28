@@ -418,7 +418,7 @@ AAAAAAA                   AAAAAAA cccccccccccccccc          ttttttttttt       II
                   <span class="body__row-folder">contract-address</span>
                   <span class="body__row-git--label">:</span>
                   <span class="body__row-git--branch">CA</span>
-                  <span class="body__row-result">GJAFwWjJ3vnTsrQVabjBVK2TYB1YtRCQXRDfDgUnpump</span>
+                  <span class="body__row-result" style={{color:"#39FF14"}}>GJAFwWjJ3vnTsrQVabjBVK2TYB1YtRCQXRDfDgUnpump</span>
                   <span class="body__row-cursor"></span>
                 </div>         
               </div>
