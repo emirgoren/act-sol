@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inconsolata:wght@200..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
 .main {
   display:grid;
   justify-content: center;
   width: 100%;
   height: 1700px;
+  padding: 20px;
 }
 
 .infos {
@@ -63,6 +66,8 @@
 .alts {
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .alts a {
@@ -136,5 +141,78 @@
   margin: 20px 0;
   font-size: 5px;
   /* background-color: black; */
+}
+
+/* thumb gif */
+
+.thumbGif {
+  width: 50%;
+}
+
+/* photo shoot */
+
+.photoShoot {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.photoShootTitle {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: lighter;
+  font-style: normal;
+  font-size:50px;
+  margin-bottom: 20px;
+}
+
+.photoShootParent {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photoShootChild {
+  width: 10vw;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+/* mobile */
+
+@media screen and (max-width: 1000px) {
+  .main{
+    scale: 0.5;
+    height: 200px;
+  }
+
+  .ascii {
+    display: none;
+  }
+
+  .infoTop pre{
+    font-size: 2.1px;
+    font-weight: lighter;
+  }
+
+  .photoShootParent {
+    display:flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: center;
+    flex-basis: 50%;
+  }
+
+  .thumbGif {
+    width: 100%;
+  }
+
+  .photoShootChild {
+    width: 20%;
+    border-radius: 20px;
+  }
 }
 
