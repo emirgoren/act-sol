@@ -193,7 +193,7 @@ AAAAAAA                   AAAAAAA cccccccccccccccc          ttttttttttt       II
           </div>
 
           <div className={styles.alts}>
-            <a href="https://x.com/amplifiedamp" target='_blank'><pre>
+            <a href="https://x.com/ACTICOMMUNITY" target='_blank'><pre>
               {`                                                                                                                     
                                                                                                                      
                                                                                                                      
