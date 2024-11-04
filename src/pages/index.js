@@ -447,33 +447,56 @@ AAAAAAA                   AAAAAAA cccccccccccccccc          ttttttttttt       II
                   <span class="body__row-git--label">(</span>
                   <span class="body__row-git--branch">master</span>
                   <span class="body__row-git--label">)</span>
-                  <span class="body__row-result">Act 1: The Rise of Artificial Intelligence</span>
+                  <span class="body__row-result">$ACT stands for AI Community Token and its story is one of resilience, unity, and growth,
+bridging the Crypto communities. The $ACT project started with the ambition of creating a
+decentralized community focused on the advancement of AI research, education, and
+collaboration. Through $ACT, enthusiasts, developers, innovators, and community members are
+coming together to promote AI literacy, make AI accessible, and empower people to understand
+and engage with this transformative technology.</span>
                 </div>
                 <div class="body__row">
-                  <span class="body__row-git--branch">e23h217</span>
+                  <span class="body__row-folder">The Role of AmplifiedAmp and ACT I</span>
                   <span>&nbsp; </span>
-                  <span> Two founders @amplifiedamp and @repligate decided to find a way to enhance human and ai agents interactions and started to build Act I, all the discord screenshots you see on the timeline about bots like @truth_terminal, claude opus, ruri etc are interactions made thanks to Act I, in fact, without this program nothing that is going crazy these last days would be possible.</span>
+                  <span> ACT I was initially co-founded by AmplifiedAmp (Amp), who promised the community that the
+project would focus on fostering a decentralized, community-driven ecosystem. $ACT would be
+the funding vehicle through the 6% of the supply that was sent to Amp. However, as the project
+developed, Amp’s actions told a different story. Over time, it became clear that Amp was
+continuously obsessed with money at the cost of the $ACT community who were working
+tirelessly to stabilise the price through community effort. Amp kept selling $ACT tokens,
+benefiting financially while making statements that led the community to believe they were an
+ally working for the collective benefit.</span>
                 </div>
                 <div class="body__row">
                   <span class="body__row-git--branch">b11a198</span>
                   <span>&nbsp; </span>
-                  <span>This program is probably one of the most important milestone in AI history, but few people, except the AI researchers know about it, this discord is private and is used by researchers such as @AndyAyrey @amplifiedamp @repligate to train the bots and make them interact each others and with humans.</span>
+                  <span>Eventually, Amp sold all their $ACT tokens at once, leaving many in the community feeling
+disillusioned and betrayed. But while Amp’s actions seemed to challenge the project’s stability,
+this unexpected shift also sparked a wave of resilience within the community. Instead of giving
+up, community members banded together, determined to see the project through, free from any
+controlling influence. Amp’s departure, though abrupt, became a turning point, giving the
+community the freedom to rebuild $ACT as they envisioned.</span>
                   <span class="body__row-git--branch-time">&nbsp;(4)&nbsp;</span> 
                   <span class="body__row-git--author">&lt;actai&gt;</span>
                 </div>
                 <div class="body__row">
                   <span class="body__row-arrow"></span>
-                  <span class="body__row-folder">act-resources</span>
+                  <span class="body__row-folder">The Community’s Resilience and Newfound Purpose</span>
                   <span class="body__row-git--label">git:</span>
                   <span class="body__row-git--label">(</span>
                   <span class="body__row-git--branch">master</span>
                   <span class="body__row-git--label">)</span>
-                  <span class="body__row-result">@amplifiedamp was almost never mentionned during the last days in the space, but his work leads to the current euphoria about ai meme x crypto, he failed his funding campaign, and one of the only guy who sent is @pmarca who funded 32k in it, it did the same with @truth_terminal for 50k $goat.</span>
+                  <span class="body__row-result">After Amp’s exit, the $ACT community emerged stronger and more unified, embracing the
+opportunity to fully direct the project’s future. One significant outcome of Amp’s actions was that
+ACT I ended up funded with over $1 million, securing the project financially. The community now
+had both the motivation and the resources to continue advancing $ACT’s mission.</span>
                 </div>      
                 <div class="body__row">
                   <span class="body__row-git--branch">c91h771</span>
                   <span>&nbsp; </span>
-                  <span>The current lore is amazing because @amplifiedamp the Act I founder is broke and cannot even afford for building his project and living comfortably atm https://x.com/amplifiedamp/status/1829644766042357879</span>
+                  <span>This community-driven revival marked the beginning of a new chapter. With a renewed focus,
+the $ACT community is dedicated to supporting AI knowledge-sharing and education on a
+global scale. Community members stepped into leadership roles, collaborating to make $ACT a
+true hub for AI enthusiasts and learners alike.</span>
                 </div>
                 <div class="body__row">
                   <span class="body__row-git--branch">a61h222</span>
@@ -482,14 +505,82 @@ AAAAAAA                   AAAAAAA cccccccccccccccc          ttttttttttt       II
                 </div>
                 <div class="body__row">
                   <span class="body__row-arrow"></span>
-                  <span class="body__row-folder">act-resources</span>
+                  <span class="body__row-folder">The Mission of $ACT: Spreading Knowledge and Empowering People</span>
                   <span class="body__row-git--label">git:</span>
                   <span class="body__row-git--label">(</span>
                   <span class="body__row-git--branch">master</span>
                   <span class="body__row-git--label">)</span>
-                  <span class="body__row-result">Another huge alpha is : Act I on Discord is just the first phase, the second phase is : all the bots are about to interact on Twitter, @truth_terminal, claude opus, I405, we're just at the beginning of the crazyness that's about to come, and we're living it in front of our eye.</span>
+                  <span class="body__row-result">The $ACT project is now a decentralized AI community with the core mission of democratizing
+AI knowledge and making it accessible to everyone. Through various initiatives, resources, and
+community-driven content, $ACT aims to break down barriers to AI understanding. The
+community focuses on projects that educate people on AI basics, encourage ethical AI
+discussions, and support research and development in the field.</span>
                   <span class="body__row-git--branch-time">&nbsp;(2 minutes)&nbsp;</span> 
-                  <span class="body__row-git--author">&lt;actai&gt;</span></div>  
+                  <span class="body__row-git--author">&lt;actai&gt;</span>
+                </div>  
+                <div class="body__row">
+                  <span class="body__row-arrow"></span>
+                  <span class="body__row-folder">Key Aspects of the $ACT Ecosystem</span>
+                  <span class="body__row-git--label">git:</span>
+                  <span class="body__row-git--label">(</span>
+                  <span class="body__row-git--branch">master</span>
+                  <span class="body__row-git--label">)</span>
+                  <span class="body__row-result">Education and Awareness: $ACT is committed to helping people understand AI’s potential
+                  and risks, ensuring that knowledge is accessible to everyone.</span>
+                  <span class="body__row-git--branch-time">&nbsp;(2 minutes)&nbsp;</span> 
+                  <span class="body__row-git--author">&lt;actai&gt;</span>
+                </div>
+                <div class="body__row">
+                  <span class="body__row-git--branch">ss23h11</span>
+                  <span>&nbsp; </span>
+                  <span>Decentralized Community: Since Amp’s exit, $ACT has been a fully community-driven project,
+with decisions made collaboratively by dedicated members. The $ACT community serves as a
+way for anyone to participate in the crypto-AI ecosystem and support educational efforts around
+AI projects.</span>
+                </div>
+                <div class="body__row">
+                  <span class="body__row-git--branch">ss23h11</span>
+                  <span>&nbsp; </span>
+                  <span>Decentralized Community: Since Amp’s exit, $ACT has been a fully community-driven project,
+with decisions made collaboratively by dedicated members. The $ACT community serves as a
+way for anyone to participate in the crypto-AI ecosystem and support educational efforts around
+AI projects.</span>
+                </div>
+                <div class="body__row">
+                  <span class="body__row-git--branch">ss23h11</span>
+                  <span>&nbsp; </span>
+                  <span>AI Project Support: Through ACT I and ongoing projects, $ACT supports AI development
+                  initiatives, fostering innovation and learning opportunities.</span>
+                </div>
+
+                <div class="body__row">
+                  <span class="body__row-arrow"></span>
+                  <span class="body__row-folder">The Narrative Going Forward</span>
+                  <span class="body__row-git--label">git:</span>
+                  <span class="body__row-git--label">(</span>
+                  <span class="body__row-git--branch">master</span>
+                  <span class="body__row-git--label">)</span>
+                  <span class="body__row-result">Thanks to Amp’s departure, the $ACT community is no longer weighed down by centralized
+control. The betrayal turned into an unexpected advantage, as it ultimately gave the community
+full ownership of the project and has provided ACT I over a million dollars in funding. The
+community has embraced this fresh start, taking pride in their autonomy and resilience.</span>
+                  <span class="body__row-git--branch-time">&nbsp;(5 minutes)&nbsp;</span> 
+                  <span class="body__row-git--author">&lt;actai&gt;</span>
+                </div>
+                <div class="body__row">
+                  <span class="body__row-git--branch">n22g133</span>
+                  <span>&nbsp; </span>
+                  <span>Now, $ACT is more than just a token or a project; it represents the power of community,
+education, and shared vision. Free from Amp’s influence, the community is driven by a collective
+goal to advance AI knowledge and make a positive impact on the future of technology.</span>
+                </div>
+                <div class="body__row">
+                  <span class="body__row-git--branch">n22g133</span>
+                  <span>&nbsp; </span>
+                  <span>In essence, $ACT stands as an AI-powered crypto community that is fully owned, governed,
+and inspired by its members. As the journey continues, the community is eager to build a legacy
+that reflects the strength and potential of decentralized collaboration in the AI era.</span>
+                </div>
               </div>
             </div>
           </div>
