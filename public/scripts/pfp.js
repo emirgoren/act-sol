@@ -76,4 +76,4 @@
     video.play();
     updateCanvas();
   });
-})();       
+})();

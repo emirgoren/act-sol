@@ -141,7 +141,7 @@
 .ascii {
   font-family: monospace;
   white-space: pre;
-  color: #39FF14;
+  color: #51ff00;
   font-size: 16px; /* Adjust as needed */
   line-height: 1.1; /* Fine-tune to adjust vertical spacing */
   text-align: center;
@@ -203,7 +203,7 @@
   }
 
   .ascii {
-    display: none;
+    font-size: 4px;
   }
 
   .infoTop pre{
@@ -234,8 +234,9 @@
 
   .act {
     object-fit: fill;
-    width: 700px;
-    height: 700px;
+    width: 464px;
+    height: 500px;
+    font-size: 14px;
   }
 }
 

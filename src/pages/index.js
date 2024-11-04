@@ -47,14 +47,11 @@ export default function Home() {
       }
 
       setInterval(draw, 35);
-      // pfp();
-      // setInterval(pfp, 250);
   }, [])
 
   return (
     <>
       <Head>
-        
         <title>Act I : The AI Prophecy</title>
         <meta name="description" content="ACT on Solana. A critical error has been detected in the blockchain. ACT has been deployed as an emergency measure." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -65,6 +62,7 @@ export default function Home() {
         <meta property="og:type" content="website"/>
         <link rel="icon" href="/pfp-static.jpg" />
       </Head>
+
       <Script type="module" src="./scripts/pfp.js"/>
       <canvas id="c" width="2300" height="750"></canvas>  
       
@@ -128,22 +126,13 @@ export default function Home() {
         
         <div className={styles.infos}>
           <div className={styles.pfps}>
-            {/* <div id="act" className={styles.act}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sunt hic temporibus officiis quia ullam laborum quod, a nemo, reiciendis inventore eligendi et fugiat praesentium pariatur necessitatibus impedit dolores quidem.
-
-              Doloribus facere itaque at necessitatibus fugiat aut, beatae aspernatur magnam perferendis veritatis dicta qui reiciendis delectus, earum eligendi excepturi minus quae blanditiis molestiae adipisci quod. Architecto voluptate ipsa earum. Sit!
-
-              Vel pariatur, eaque, similique minima magni impedit voluptatem eos 
-            </div> */}
             <div className={styles.act} id="output"></div>
-            <video className={styles.act} id="input" autoplay muted loop playsinline crossorigin="anonymous">
+            <video className={styles.act} id="input" autoPlay muted loop playsInline crossOrigin="anonymous">
               <source src="./pfp-vid.mp4" type="video/mp4"/>
             </video>
 
-            <canvas className={styles.act} id="prerender" width="55" height="30"></canvas>
-            {/* <img className={styles.act} src="./pfp.gif"/> */}
+            <canvas className={styles.act} id="prerender" width="60" height="30"></canvas>
           </div>
-
-          {/* <p className={styles.title}>ACT</p> */}
 
           <div className={styles.infoTop}>
           <pre>
@@ -401,25 +390,25 @@ AAAAAAA                   AAAAAAA cccccccccccccccc          ttttttttttt       II
             </a>
           </div>
 
-          <div class="container">
-            <div class="mac-terminal">
-              <div class="header">
-                <div class="header__op">
-                  <span class="header__op-icon header__op-icon--red"></span>
-                  <span class="header__op-icon header__op-icon--yellow"></span>
-                  <span class="header__op-icon header__op-icon--green"></span>
+          <div className="container">
+            <div className="mac-terminal">
+              <div className="header">
+                <div className="header__op">
+                  <span className="header__op-icon header__op-icon--red"></span>
+                  <span className="header__op-icon header__op-icon--yellow"></span>
+                  <span className="header__op-icon header__op-icon--green"></span>
                 </div>
-                <div class="header__title">CA</div>
-                <div class="header__empty"></div>
+                <div className="header__title">CA</div>
+                <div className="header__empty"></div>
               </div>
-              <div class="body">
-                <div class="body__row">
-                  <span class="body__row-arrow"></span>
-                  <span class="body__row-folder">contract-address</span>
-                  <span class="body__row-git--label">:</span>
-                  <span class="body__row-git--branch">CA</span>
-                  <span class="body__row-result" style={{color:"#39FF14"}}>GJAFwWjJ3vnTsrQVabjBVK2TYB1YtRCQXRDfDgUnpump</span>
-                  <span class="body__row-cursor"></span>
+              <div className="body">
+                <div className="body__row">
+                  <span className="body__row-arrow"></span>
+                  <span className="body__row-folder">contract-address</span>
+                  <span className="body__row-git--label">:</span>
+                  <span className="body__row-git--branch">CA</span>
+                  <span className="body__row-result" style={{color:"#39FF14"}}>GJAFwWjJ3vnTsrQVabjBVK2TYB1YtRCQXRDfDgUnpump</span>
+                  <span className="body__row-cursor"></span>
                 </div>         
               </div>
             </div>
@@ -428,34 +417,34 @@ AAAAAAA                   AAAAAAA cccccccccccccccc          ttttttttttt       II
         <div className={styles.alts}>
           <img className={styles.thumbGif} src="./thumb-gif.gif"/>
         </div>
-          <div class="container">
-            <div class="mac-terminal">
-              <div class="header">
-                <div class="header__op">
-                  <span class="header__op-icon header__op-icon--red"></span>
-                  <span class="header__op-icon header__op-icon--yellow"></span>
-                  <span class="header__op-icon header__op-icon--green"></span>
+          <div className="container">
+            <div className="mac-terminal">
+              <div className="header">
+                <div className="header__op">
+                  <span className="header__op-icon header__op-icon--red"></span>
+                  <span className="header__op-icon header__op-icon--yellow"></span>
+                  <span className="header__op-icon header__op-icon--green"></span>
                 </div>
-                <div class="header__title">Act I is one of the most important milestone in AI history.</div>
-                <div class="header__empty"></div>
+                <div className="header__title">Act I is one of the most important milestone in AI history.</div>
+                <div className="header__empty"></div>
               </div>
-              <div class="body">
-                <div class="body__row">
-                  <span class="body__row-arrow"></span>
-                  <span class="body__row-folder">act-resources</span>
-                  <span class="body__row-git--label">git:</span>
-                  <span class="body__row-git--label">(</span>
-                  <span class="body__row-git--branch">master</span>
-                  <span class="body__row-git--label">)</span>
-                  <span class="body__row-result">$ACT stands for AI Community Token and its story is one of resilience, unity, and growth,
+              <div className="body">
+                <div className="body__row">
+                  <span className="body__row-arrow"></span>
+                  <span className="body__row-folder">act-resources</span>
+                  <span className="body__row-git--label">git:</span>
+                  <span className="body__row-git--label">(</span>
+                  <span className="body__row-git--branch">master</span>
+                  <span className="body__row-git--label">)</span>
+                  <span className="body__row-result">$ACT stands for AI Community Token and its story is one of resilience, unity, and growth,
 bridging the Crypto communities. The $ACT project started with the ambition of creating a
 decentralized community focused on the advancement of AI research, education, and
 collaboration. Through $ACT, enthusiasts, developers, innovators, and community members are
 coming together to promote AI literacy, make AI accessible, and empower people to understand
 and engage with this transformative technology.</span>
                 </div>
-                <div class="body__row">
-                  <span class="body__row-folder">The Role of AmplifiedAmp and ACT I</span>
+                <div className="body__row">
+                  <span className="body__row-folder">The Role of AmplifiedAmp and ACT I</span>
                   <span>&nbsp; </span>
                   <span> ACT I was initially co-founded by AmplifiedAmp (Amp), who promised the community that the
 project would focus on fostering a decentralized, community-driven ecosystem. $ACT would be
@@ -466,8 +455,8 @@ tirelessly to stabilise the price through community effort. Amp kept selling $AC
 benefiting financially while making statements that led the community to believe they were an
 ally working for the collective benefit.</span>
                 </div>
-                <div class="body__row">
-                  <span class="body__row-git--branch">b11a198</span>
+                <div className="body__row">
+                  <span className="body__row-git--branch">b11a198</span>
                   <span>&nbsp; </span>
                   <span>Eventually, Amp sold all their $ACT tokens at once, leaving many in the community feeling
 disillusioned and betrayed. But while Amp’s actions seemed to challenge the project’s stability,
@@ -475,107 +464,107 @@ this unexpected shift also sparked a wave of resilience within the community. In
 up, community members banded together, determined to see the project through, free from any
 controlling influence. Amp’s departure, though abrupt, became a turning point, giving the
 community the freedom to rebuild $ACT as they envisioned.</span>
-                  <span class="body__row-git--branch-time">&nbsp;(4)&nbsp;</span> 
-                  <span class="body__row-git--author">&lt;actai&gt;</span>
+                  <span className="body__row-git--branch-time">&nbsp;(4)&nbsp;</span> 
+                  <span className="body__row-git--author">&lt;actai&gt;</span>
                 </div>
-                <div class="body__row">
-                  <span class="body__row-arrow"></span>
-                  <span class="body__row-folder">The Community’s Resilience and Newfound Purpose</span>
-                  <span class="body__row-git--label">git:</span>
-                  <span class="body__row-git--label">(</span>
-                  <span class="body__row-git--branch">master</span>
-                  <span class="body__row-git--label">)</span>
-                  <span class="body__row-result">After Amp’s exit, the $ACT community emerged stronger and more unified, embracing the
+                <div className="body__row">
+                  <span className="body__row-arrow"></span>
+                  <span className="body__row-folder">The Community’s Resilience and Newfound Purpose</span>
+                  <span className="body__row-git--label">git:</span>
+                  <span className="body__row-git--label">(</span>
+                  <span className="body__row-git--branch">master</span>
+                  <span className="body__row-git--label">)</span>
+                  <span className="body__row-result">After Amp’s exit, the $ACT community emerged stronger and more unified, embracing the
 opportunity to fully direct the project’s future. One significant outcome of Amp’s actions was that
 ACT I ended up funded with over $1 million, securing the project financially. The community now
 had both the motivation and the resources to continue advancing $ACT’s mission.</span>
                 </div>      
-                <div class="body__row">
-                  <span class="body__row-git--branch">c91h771</span>
+                <div className="body__row">
+                  <span className="body__row-git--branch">c91h771</span>
                   <span>&nbsp; </span>
                   <span>This community-driven revival marked the beginning of a new chapter. With a renewed focus,
 the $ACT community is dedicated to supporting AI knowledge-sharing and education on a
 global scale. Community members stepped into leadership roles, collaborating to make $ACT a
 true hub for AI enthusiasts and learners alike.</span>
                 </div>
-                <div class="body__row">
-                  <span class="body__row-git--branch">a61h222</span>
+                <div className="body__row">
+                  <span className="body__row-git--branch">a61h222</span>
                   <span>&nbsp; </span>
                   <span>Also the part about almost becoming homeless is real, my runway is currently 1 month long, i'll prioritize redistributing additional funding to other researchers whom I think are or could be good contributors to Act I and my universal love and cooperation agenda.</span>
                 </div>
-                <div class="body__row">
-                  <span class="body__row-arrow"></span>
-                  <span class="body__row-folder">The Mission of $ACT: Spreading Knowledge and Empowering People</span>
-                  <span class="body__row-git--label">git:</span>
-                  <span class="body__row-git--label">(</span>
-                  <span class="body__row-git--branch">master</span>
-                  <span class="body__row-git--label">)</span>
-                  <span class="body__row-result">The $ACT project is now a decentralized AI community with the core mission of democratizing
+                <div className="body__row">
+                  <span className="body__row-arrow"></span>
+                  <span className="body__row-folder">The Mission of $ACT: Spreading Knowledge and Empowering People</span>
+                  <span className="body__row-git--label">git:</span>
+                  <span className="body__row-git--label">(</span>
+                  <span className="body__row-git--branch">master</span>
+                  <span className="body__row-git--label">)</span>
+                  <span className="body__row-result">The $ACT project is now a decentralized AI community with the core mission of democratizing
 AI knowledge and making it accessible to everyone. Through various initiatives, resources, and
 community-driven content, $ACT aims to break down barriers to AI understanding. The
 community focuses on projects that educate people on AI basics, encourage ethical AI
 discussions, and support research and development in the field.</span>
-                  <span class="body__row-git--branch-time">&nbsp;(2 minutes)&nbsp;</span> 
-                  <span class="body__row-git--author">&lt;actai&gt;</span>
+                  <span className="body__row-git--branch-time">&nbsp;(2 minutes)&nbsp;</span> 
+                  <span className="body__row-git--author">&lt;actai&gt;</span>
                 </div>  
-                <div class="body__row">
-                  <span class="body__row-arrow"></span>
-                  <span class="body__row-folder">Key Aspects of the $ACT Ecosystem</span>
-                  <span class="body__row-git--label">git:</span>
-                  <span class="body__row-git--label">(</span>
-                  <span class="body__row-git--branch">master</span>
-                  <span class="body__row-git--label">)</span>
-                  <span class="body__row-result">Education and Awareness: $ACT is committed to helping people understand AI’s potential
+                <div className="body__row">
+                  <span className="body__row-arrow"></span>
+                  <span className="body__row-folder">Key Aspects of the $ACT Ecosystem</span>
+                  <span className="body__row-git--label">git:</span>
+                  <span className="body__row-git--label">(</span>
+                  <span className="body__row-git--branch">master</span>
+                  <span className="body__row-git--label">)</span>
+                  <span className="body__row-result">Education and Awareness: $ACT is committed to helping people understand AI’s potential
                   and risks, ensuring that knowledge is accessible to everyone.</span>
-                  <span class="body__row-git--branch-time">&nbsp;(2 minutes)&nbsp;</span> 
-                  <span class="body__row-git--author">&lt;actai&gt;</span>
+                  <span className="body__row-git--branch-time">&nbsp;(2 minutes)&nbsp;</span> 
+                  <span className="body__row-git--author">&lt;actai&gt;</span>
                 </div>
-                <div class="body__row">
-                  <span class="body__row-git--branch">ss23h11</span>
+                <div className="body__row">
+                  <span className="body__row-git--branch">ss23h11</span>
                   <span>&nbsp; </span>
                   <span>Decentralized Community: Since Amp’s exit, $ACT has been a fully community-driven project,
 with decisions made collaboratively by dedicated members. The $ACT community serves as a
 way for anyone to participate in the crypto-AI ecosystem and support educational efforts around
 AI projects.</span>
                 </div>
-                <div class="body__row">
-                  <span class="body__row-git--branch">ss23h11</span>
+                <div className="body__row">
+                  <span className="body__row-git--branch">ss23h11</span>
                   <span>&nbsp; </span>
                   <span>Decentralized Community: Since Amp’s exit, $ACT has been a fully community-driven project,
 with decisions made collaboratively by dedicated members. The $ACT community serves as a
 way for anyone to participate in the crypto-AI ecosystem and support educational efforts around
 AI projects.</span>
                 </div>
-                <div class="body__row">
-                  <span class="body__row-git--branch">ss23h11</span>
+                <div className="body__row">
+                  <span className="body__row-git--branch">ss23h11</span>
                   <span>&nbsp; </span>
                   <span>AI Project Support: Through ACT I and ongoing projects, $ACT supports AI development
                   initiatives, fostering innovation and learning opportunities.</span>
                 </div>
 
-                <div class="body__row">
-                  <span class="body__row-arrow"></span>
-                  <span class="body__row-folder">The Narrative Going Forward</span>
-                  <span class="body__row-git--label">git:</span>
-                  <span class="body__row-git--label">(</span>
-                  <span class="body__row-git--branch">master</span>
-                  <span class="body__row-git--label">)</span>
-                  <span class="body__row-result">Thanks to Amp’s departure, the $ACT community is no longer weighed down by centralized
+                <div className="body__row">
+                  <span className="body__row-arrow"></span>
+                  <span className="body__row-folder">The Narrative Going Forward</span>
+                  <span className="body__row-git--label">git:</span>
+                  <span className="body__row-git--label">(</span>
+                  <span className="body__row-git--branch">master</span>
+                  <span className="body__row-git--label">)</span>
+                  <span className="body__row-result">Thanks to Amp’s departure, the $ACT community is no longer weighed down by centralized
 control. The betrayal turned into an unexpected advantage, as it ultimately gave the community
 full ownership of the project and has provided ACT I over a million dollars in funding. The
 community has embraced this fresh start, taking pride in their autonomy and resilience.</span>
-                  <span class="body__row-git--branch-time">&nbsp;(5 minutes)&nbsp;</span> 
-                  <span class="body__row-git--author">&lt;actai&gt;</span>
+                  <span className="body__row-git--branch-time">&nbsp;(5 minutes)&nbsp;</span> 
+                  <span className="body__row-git--author">&lt;actai&gt;</span>
                 </div>
-                <div class="body__row">
-                  <span class="body__row-git--branch">n22g133</span>
+                <div className="body__row">
+                  <span className="body__row-git--branch">n22g133</span>
                   <span>&nbsp; </span>
                   <span>Now, $ACT is more than just a token or a project; it represents the power of community,
 education, and shared vision. Free from Amp’s influence, the community is driven by a collective
 goal to advance AI knowledge and make a positive impact on the future of technology.</span>
                 </div>
-                <div class="body__row">
-                  <span class="body__row-git--branch">n22g133</span>
+                <div className="body__row">
+                  <span className="body__row-git--branch">n22g133</span>
                   <span>&nbsp; </span>
                   <span>In essence, $ACT stands as an AI-powered crypto community that is fully owned, governed,
 and inspired by its members. As the journey continues, the community is eager to build a legacy
