@@ -1,13 +1,11 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
-import { useLayoutEffect } from 'react'
+import { useEffect } from 'react'
 import Script from 'next/script'
-// import { Pane } from "https://cdn.skypack.dev/tweakpane";
 
 export default function Home() {
 
-  useLayoutEffect(() => {
+  useEffect(() => {
       var c = document.getElementById("c");
       var ctx = c.getContext("2d");
 
