@@ -124,12 +124,14 @@ export default function Home() {
         
         <div className={styles.infos}>
           <div className={styles.pfps}>
-            <div className={styles.act} id="output"></div>
+            {/* <div className={styles.act} id="output"></div>
             <video className={styles.act} id="input" autoPlay muted loop playsInline crossOrigin="anonymous">
               <source src="./pfp-vid.mp4" type="video/mp4"/>
             </video>
 
-            <canvas className={styles.act} id="prerender" width="60" height="30"></canvas>
+            <canvas className={styles.act} id="prerender" width="60" height="30"></canvas> */}
+
+            <img src="./pfp-static.jpg"></img>
           </div>
 
           <div className={styles.infoTop}>
@@ -406,6 +408,12 @@ AAAAAAA                   AAAAAAA cccccccccccccccc          ttttttttttt       II
                   <span className="body__row-git--label">:</span>
                   <span className="body__row-git--branch">CA</span>
                   <span className="body__row-result" style={{color:"#39FF14"}}>GJAFwWjJ3vnTsrQVabjBVK2TYB1YtRCQXRDfDgUnpump</span>
+                </div>
+                <div className="body__row">
+                  <span className="body__row-arrow"></span>
+                  <span className="body__row-folder">contact</span>
+                  <span className="body__row-git--label">:</span>
+                  <span className="body__row-result" style={{color:"#39FF14"}}>team@actsol.xyz</span>
                   <span className="body__row-cursor"></span>
                 </div>         
               </div>
