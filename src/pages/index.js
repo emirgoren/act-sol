@@ -398,7 +398,7 @@ AAAAAAA                   AAAAAAA cccccccccccccccc          ttttttttttt       II
                   <span className="header__op-icon header__op-icon--yellow"></span>
                   <span className="header__op-icon header__op-icon--green"></span>
                 </div>
-                <div className="header__title">CA</div>
+                <div className="header__title">ACT I</div>
                 <div className="header__empty"></div>
               </div>
               <div className="body">
@@ -414,6 +414,12 @@ AAAAAAA                   AAAAAAA cccccccccccccccc          ttttttttttt       II
                   <span className="body__row-folder">contact</span>
                   <span className="body__row-git--label">:</span>
                   <span className="body__row-result" style={{color:"#39FF14"}}>team@actsol.xyz</span>
+                  <span className="body__row-cursor"></span>
+                </div>
+                <div className="body__row">
+                  <span className="body__row-arrow"></span>
+                  <span className="body__row-result" style={{color:"#53F2E6"}}>Our mission is to become the definitive index of all AI agents,</span>
+                  <span className="body__row-result" style={{color:"#53F2E6"}}>setting the standard for what's possible when AI meets meme culture.</span>
                   <span className="body__row-cursor"></span>
                 </div>         
               </div>
