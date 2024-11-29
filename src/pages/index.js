@@ -131,7 +131,7 @@ export default function Home() {
 
             <canvas className={styles.act} id="prerender" width="60" height="30"></canvas> */}
 
-            <img src="./pfp-static.jpg"></img>
+            <img className={styles.actPFP} src="./pfp.gif"></img>
           </div>
 
           <div className={styles.infoTop}>
