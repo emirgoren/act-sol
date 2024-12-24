@@ -15,8 +15,11 @@ export default function Home() {
     let phantomErr = false;
 
     useEffect(() => {
+      phantomErr = false;
       try{
-        if(window.phantom?.solana) {
+        console.log(window.phantom)
+        console.log(phantomErr)
+        if(window.phantom !== undefined) {
           const params = {
             width: 375,
             providerType: "SOLANA",
@@ -67,8 +70,10 @@ export default function Home() {
     }, []);
 
     if(phantomErr) {
-      return <div><p>Please add Phantom to your browser to Swap on OKX Dex</p></div>;
+      console.log('phantom error')
+      return <div>Test</div>;
     }else {
+      console.log('no error')
       return <div ref={widgetRef} />;
     }
   }
@@ -126,7 +131,7 @@ export default function Home() {
         <meta property="og:image:width" content="420"/>
         <meta property="og:image:height" content="420"/>
         <meta property="og:type" content="website"/>
-        <link rel="icon" href="/pfp-static.jpg" />
+        <link rel="icon" href="/pfp.gif" />
       </Head>
 
       <Script type="module" src="./scripts/pfp.js"/>
