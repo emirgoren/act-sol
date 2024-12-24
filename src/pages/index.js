@@ -1,9 +1,57 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import Script from 'next/script'
 
+// OKX WIDGET
+import { createOkxSwapWidget, ProviderType } from '@okxweb3/dex-widget';
+
 export default function Home() {
+
+  // OKX SWAP
+  const widgetRef = useRef();
+
+  function OKX() {  
+    useEffect(() => {
+      const params = {
+        width: 375,
+        providerType: "SOLANA",
+        // provider: "",
+        theme: "dark", // light/dark or provide your own color palette
+        tradeType: "swap", // The type of transaction. It can be “swap”, “bridge”, or “auto”.
+        // providerType: "SOLANA", // ProviderType represents the type of the provider and corresponds to it one-to-one. For example, if the provider is Solana, then the providerType would be SOLANA.
+        lang: "unknown",
+        baseUrl: "https://www.okx.com",
+        tokenPair: {
+          fromChain: 501, //SOL
+          toChain: 501, // SOL
+          fromToken: 'So11111111111111111111111111111111111111111', // SOL
+          toToken: 'GJAFwWjJ3vnTsrQVabjBVK2TYB1YtRCQXRDfDgUnpump', // ACT-SOL
+        }
+      };
+      const provider = window.phantom.solana;
+  
+      const listeners = [
+        {
+          event: 'ON_CONNECT_WALLET',
+          handler: () => {
+            provider.connect();
+          },
+        },
+      ];
+  
+      const instance = createOkxSwapWidget(widgetRef.current, {
+        params,
+        provider,
+        listeners
+      });
+      return () => {
+        instance.destroy();
+      };
+    }, []);
+  
+    return <div ref={widgetRef} />;
+  }
 
   useEffect(() => {
       var c = document.getElementById("c");
@@ -426,9 +474,18 @@ AAAAAAA                   AAAAAAA cccccccccccccccc          ttttttttttt       II
             </div>
           </div>
         </div>
+
+        {/* OKX WIDGET */}
+        {
+          <div className={styles.OKXMain}>
+            <OKX></OKX>
+          </div>
+        }
+        
         <div className={styles.alts}>
           <img className={styles.thumbGif} src="./thumb-gif.gif"/>
         </div>
+
           <div className="container">
             <div className="mac-terminal">
               <div className="header">
