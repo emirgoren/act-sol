@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Script from 'next/script'
 
 // OKX WIDGET
@@ -12,45 +12,65 @@ export default function Home() {
   const widgetRef = useRef();
 
   function OKX() {  
+    let phantomErr = false;
+
     useEffect(() => {
-      const params = {
-        width: 375,
-        providerType: "SOLANA",
-        // provider: "",
-        theme: "dark", // light/dark or provide your own color palette
-        tradeType: "swap", // The type of transaction. It can be “swap”, “bridge”, or “auto”.
-        // providerType: "SOLANA", // ProviderType represents the type of the provider and corresponds to it one-to-one. For example, if the provider is Solana, then the providerType would be SOLANA.
-        lang: "unknown",
-        baseUrl: "https://www.okx.com",
-        tokenPair: {
-          fromChain: 501, //SOL
-          toChain: 501, // SOL
-          fromToken: 'So11111111111111111111111111111111111111111', // SOL
-          toToken: 'GJAFwWjJ3vnTsrQVabjBVK2TYB1YtRCQXRDfDgUnpump', // ACT-SOL
+      try{
+        if(window.phantom?.solana) {
+          const params = {
+            width: 375,
+            providerType: "SOLANA",
+            // provider: "",
+            theme: "dark", // light/dark or provide your own color palette
+            tradeType: "swap", // The type of transaction. It can be “swap”, “bridge”, or “auto”.
+            // providerType: "SOLANA", // ProviderType represents the type of the provider and corresponds to it one-to-one. For example, if the provider is Solana, then the providerType would be SOLANA.
+            lang: "unknown",
+            baseUrl: "https://www.okx.com",
+            tokenPair: {
+              fromChain: 501, //SOL
+              toChain: 501, // SOL
+              fromToken: 'So11111111111111111111111111111111111111111', // SOL
+              toToken: 'GJAFwWjJ3vnTsrQVabjBVK2TYB1YtRCQXRDfDgUnpump', // ACT-SOL
+            }
+          };
+          const provider = window.phantom.solana;
+      
+          const listeners = [
+            {
+              event: 'ON_CONNECT_WALLET',
+              handler: () => {
+                try{
+                  provider.connect();
+                }catch{
+                  alert('You need to have Phantom on your browser.')
+                  phantomErr = true;
+                }
+              },
+            },
+          ];
+      
+          const instance = createOkxSwapWidget(widgetRef.current, {
+            params,
+            provider,
+            listeners
+          });
+          return () => {
+            instance.destroy();
+          };
+        }else {
+          phantomErr = true;
         }
-      };
-      const provider = window.phantom.solana;
-  
-      const listeners = [
-        {
-          event: 'ON_CONNECT_WALLET',
-          handler: () => {
-            provider.connect();
-          },
-        },
-      ];
-  
-      const instance = createOkxSwapWidget(widgetRef.current, {
-        params,
-        provider,
-        listeners
-      });
-      return () => {
-        instance.destroy();
-      };
+        
+      }catch(err){
+        phantomErr = true;
+      }
     }, []);
-  
-    return <div ref={widgetRef} />;
+
+    if(phantomErr) {
+      return <div><p>Please add Phantom to your browser to Swap on OKX Dex</p></div>;
+    }else {
+      return <div ref={widgetRef} />;
+    }
   }
 
   useEffect(() => {
@@ -476,11 +496,11 @@ AAAAAAA                   AAAAAAA cccccccccccccccc          ttttttttttt       II
         </div>
 
         {/* OKX WIDGET */}
-        {
-          <div className={styles.OKXMain}>
-            <OKX></OKX>
-          </div>
-        }
+        
+          {
+            <div className={styles.OKXMain}><OKX></OKX></div>
+          }
+        
         
         <div className={styles.alts}>
           <img className={styles.thumbGif} src="./thumb-gif.gif"/>
