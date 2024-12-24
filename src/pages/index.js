@@ -126,12 +126,12 @@ export default function Home() {
         <title>Act I : The AI Prophecy</title>
         <meta name="description" content="ACT on Solana. A critical error has been detected in the blockchain. ACT has been deployed as an emergency measure." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:image" content={`/pfp.gif`} />
+        <meta property="og:image" content={`/pfp-static.jpg`} />
         <meta property="og:image:type" content="image/jpeg"/>
         <meta property="og:image:width" content="420"/>
         <meta property="og:image:height" content="420"/>
         <meta property="og:type" content="website"/>
-        <link rel="icon" href="/pfp.gif" />
+        <link rel="icon" href="/pfp-static.jpg" />
       </Head>
 
       <Script type="module" src="./scripts/pfp.js"/>
